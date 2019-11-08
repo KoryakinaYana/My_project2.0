@@ -2,7 +2,7 @@ from turtle import *
 from math import sqrt
 #Geraschenko Maria - def(romb)
 #Koryakina Yana - def(triangle)
-#LeontevaSofia - def(square)
+#LeontyevaSofia - def(square)
 
 #Maria - romb
 def romb(x, color1):
@@ -30,4 +30,17 @@ def triangle (x,color2):
     forward (sqrt(2*x**2))
     end_fill()
     mainloop()
+triangle(100, 'green')
 #Sonya - square
+def square (x, color3):
+    fillcolor(color3)
+    begin_fill()
+    color(color3)
+    for _ in range (4):
+        forward (x)
+        left (90)
+    end_fill()
+    mainloop()
+square(100, 'blue')
+
+
