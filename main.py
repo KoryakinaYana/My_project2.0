@@ -7,10 +7,10 @@ from math import sqrt
 #Maria - romb
 
 #Yana - triangle
-def triangle (x,color1):
-    fillcolor(color1)
+def triangle (x,color2):
+    fillcolor(color2)
     begin_fill()
-    color(color1)
+    color(color2)
     forward (x)
     left (90)
     forward (x)
