@@ -5,10 +5,11 @@ from math import sqrt
 #LeontyevaSofia - def(square)
 
 #Maria - romb
-def romb(x, color1):
+def romb(x,color1,fillcolor1):
     down()
     color(color1)
     begin_fill()
+    fillcolor(fillcolor1)
     for _ in range (2):
         forward(x)
         right(135)
@@ -16,31 +17,77 @@ def romb(x, color1):
         right(45)
     end_fill()
     up()
-    mainloop()
-romb(100, 'red')
 #Yana - triangle
-def triangle (x,color2):
-    fillcolor(color2)
-    begin_fill()
+def triangle (x,color2,fillcolor2):
+    down()
     color(color2)
+    begin_fill()
+    fillcolor(fillcolor2)
     forward (x)
     left (90)
     forward (x)
     left (135)
     forward (sqrt(2*x**2))
     end_fill()
-    mainloop()
-triangle(100, 'green')
+    up()
 #Sonya - square
-def square (x, color3):
-    fillcolor(color3)
-    begin_fill()
+def square (x,color3,fillcolor3):
+    down()
     color(color3)
+    begin_fill()
+    fillcolor(fillcolor3)
     for _ in range (4):
         forward (x)
         left (90)
     end_fill()
-    mainloop()
-square(100, 'blue')
+    up()
+#Yana - cat
+up()
+goto(-800, -400)
+def cat():
+    triangle (150,'black','red')
+    left(135)
+    forward(200)
+    left(180)
+    romb(100,'black','red')
+    forward(50)
+    right(90)
+    forward(150)
+    left(45)
+    forward(150)
+    left(135)
+    forward (sqrt(2*150**2))
+    left(135)
+    triangle(150,'black','red')
+    left(180)
+    forward (sqrt(2*150**2))
+    left(135)
+    triangle(100,'black','red')
+    left(135)
+    forward(30)
+    right(180)
+    square(80,'black','red')
+    forward(80)
+    left(90)
+    forward(80)
+    right(90)
+    forward(80)
+    left(180)
+    triangle(80,'black','red')
+    left(135)
+    forward(160)
+    right(180)
+    triangle(80,'black','red')
+    left(90)
+cat()
+#Yana - bear
+goto(-900,300)
+left(45)
+forward(150)
+right(180)
+triangle (150,'black','brown')
+
+#Sonya - ...
+
 
 
