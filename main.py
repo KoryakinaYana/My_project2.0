@@ -43,8 +43,8 @@ def square (x,color3,fillcolor3):
     up()
 #Yana - cat
 up()
-goto(-800, -400)
 def cat():
+    goto(-800, -400)
     triangle (150,'black','red')
     left(135)
     forward(200)
@@ -125,8 +125,8 @@ def bear():
     right(135)
 #Sonya - swan
 up()
-goto(100, 50)
 def swan():
+    goto(100, 50)
     down()
     triangle(30, 'black', 'yellow')
     left(135)
