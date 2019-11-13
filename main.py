@@ -12,9 +12,9 @@ def romb(x,color1,fillcolor1):
     fillcolor(fillcolor1)
     for _ in range (2):
         forward(x)
-        right(135)
-        forward(x)
         right(45)
+        forward(x)
+        right(135)
     end_fill()
     up()
 #Yana - triangle
@@ -79,15 +79,43 @@ def cat():
     right(180)
     triangle(80,'black','red')
     left(90)
-cat()
-#Yana - bear
-goto(-900,300)
-left(45)
-forward(150)
-right(180)
-triangle (150,'black','brown')
 
-#Sonya - ...
+#Sonya - swan
+up()
+goto(100, 50)
+def swan():
+    down()
+    triangle(30, 'black', 'yellow')
+    left(135)
+    forward(30)
+    left(90)
+    forward(30)
+    right(135)
+    romb(40, 'black', 'yellow')
+    back(40)
+    left(135)
+    square(40, 'black', 'yellow')
+    back(40)
+    left(90)
+    forward(40)
+    right(90)
+    forward(40)
+    left(180)
+    triangle(40, 'black', 'yellow')
+    right(135)
+    forward(40)
+    right(90)
+    forward(40)
+    back(60)
+    triangle(60, 'black', 'yellow')
+    left(180)
+    triangle(85, 'black', 'yellow')
+    left(180)
+    triangle(85, 'black', 'yellow')
+    left(180)
+    forward(100)
+swan()
+
 
 
 
