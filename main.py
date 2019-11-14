@@ -44,9 +44,10 @@ def square (x,color3,fillcolor3):
     end_fill()
     up()
 #Yana - cat
-up()
 def cat():
+    up()
     goto(-800, -400)
+    down()
     triangle (150,'black','red')
     left(135)
     forward(200)
@@ -81,9 +82,12 @@ def cat():
     right(180)
     triangle(80,'black','red')
     left(90)
+cat()
 #Yana - bear
 def bear():
+    up()
     goto(-900,300)
+    down()
     left(45)
     forward(150)
     right(180)
@@ -125,10 +129,11 @@ def bear():
     left(180)
     triangle (70,'black','brown')
     right(135)
+bear()
 #Sofia - swan
-up()
 def swan():
-    goto(100, 50)
+    up()
+    goto(200,-90)
     down()
     left(90)
     romb(70, 'black', 'yellow')
@@ -158,13 +163,12 @@ def swan():
     triangle(99, 'black', 'yellow')
     left(180)
     triangle(99, 'black', 'yellow')
-    forward(200)
-    right(90)
-    forward(100)
-    right(90)
+    right(180)
 swan()
 #Sofia - rabbit
 def rabbit():
+    up()
+    goto(-200,100)
     down()
     romb(70, 'black', 'pink')
     right(135)
@@ -198,12 +202,13 @@ def rabbit():
     triangle(100, 'black', 'pink')
     left(90)
     triangle(70, 'black', 'pink')
-    left(180)
-    forward(200)
+    right(90)
 rabbit()
 #Maria - man
 def man( a, b, x, color1, fillcolor1, c, color2, fillcolor2, d, color3, fillcolor3,f, color4, fillcolor4, g, color5, fillcolor5, h, color6, fillcolor6 ):
+    up()
     goto(  a, b )
+    down()
     left(135)
     triangle(x, color1, fillcolor1)
     left(135)
@@ -242,10 +247,11 @@ def man( a, b, x, color1, fillcolor1, c, color2, fillcolor2, d, color3, fillcolo
     forward(0.4 * h)
     left(180)
     triangle(h, color6, fillcolor6)
-    mainloop()
 #Maria - fish
 def fish ( a, b, x, color1, fillcolor1, c, color3, fillcolor3, d, color2, fillcolor2, f, color4, fillcolor4 ):
+    up()
     goto ( a, b )
+    down()
     romb ( x, color1, fillcolor1 )
     left ( 135 )
     romb ( x, color1, fillcolor1 )
@@ -267,10 +273,12 @@ def fish ( a, b, x, color1, fillcolor1, c, color3, fillcolor3, d, color2, fillco
     forward ( 0.5 * f * sqrt(2))
     left ( 135 )
     triangle(f,color4, fillcolor4 )
-    mainloop()
+    left(90)
+
 #for verification:
 #romb(100,'red','red')
-#fish(0,0,100,'red','red',70, 'orange', 'orange', 200, 'yellow', 'yellow', 150, 'orange','orange' )
+fish (500, 200, 100,'red','red',70, 'orange', 'orange', 200, 'yellow', 'yellow', 150, 'orange','orange' )
 #square(70,'red', 'red')
 #triangle(100,'yellow', 'yellow')
-man (0,0,60, 'gray4','red2', 100, 'gray4','dark orange', 50, 'gray4', 'gold', 100, 'gray4','red2', 50, 'gray4', 'gold', 50, 'gray4', 'red2')
+man (600, -300, 60,'gray4','red2', 100, 'gray4','dark orange', 50, 'gray4', 'gold', 100, 'gray4','red2', 50, 'gray4', 'gold', 50, 'gray4', 'red2')
+mainloop()
