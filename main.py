@@ -1,8 +1,10 @@
 from turtle import *
 from math import sqrt
+t = Turtle()
+t.screen.setup(1200, 1200)
 #Geraschenko Maria - def(romb)
 #Koryakina Yana - def(triangle)
-#LeontyevaSofia - def(square)
+#Leontyeva Sofia - def(square)
 
 #Maria - romb
 def romb(x,color1,fillcolor1):
@@ -30,7 +32,7 @@ def triangle (x,color2,fillcolor2):
     forward (sqrt(2*x**2))
     end_fill()
     up()
-#Sonya - square
+#Sofia - square
 def square (x,color3,fillcolor3):
     down()
     color(color3)
@@ -123,7 +125,7 @@ def bear():
     left(180)
     triangle (70,'black','brown')
     right(135)
-#Sonya - swan
+#Sofia - swan
 up()
 def swan():
     goto(100, 50)
@@ -157,6 +159,10 @@ def swan():
     triangle(85, 'black', 'yellow')
     left(180)
     forward(100)
+#Sofia - rabbit
 
+#Maria - man
+
+#Maria - fish
 
 
