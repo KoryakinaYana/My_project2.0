@@ -277,7 +277,7 @@ def fish ( a, b, x, color1, fillcolor1, c, color3, fillcolor3, d, color2, fillco
 
 #for verification:
 #romb(100,'red','red')
-fish (500, 200, 100,'red','red',70, 'orange', 'orange', 200, 'yellow', 'yellow', 150, 'orange','orange' )
+fish (500, 200, 100,'black','red',70, 'black', 'orange', 200, 'black', 'yellow', 150, 'black','orange' )
 #square(70,'red', 'red')
 #triangle(100,'yellow', 'yellow')
 man (600, -300, 60,'gray4','red2', 100, 'gray4','dark orange', 50, 'gray4', 'gold', 100, 'gray4','red2', 50, 'gray4', 'gold', 50, 'gray4', 'red2')
