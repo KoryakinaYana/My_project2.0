@@ -1,5 +1,7 @@
 from turtle import *
 from math import sqrt
+t = Turtle()
+t.screen.setup(1200, 1200)
 #Geraschenko Maria - def(romb)
 #Koryakina Yana - def(triangle)
 #LeontevaSofia - def(square)
@@ -17,7 +19,6 @@ def romb(x, color1):
     end_fill()
     up()
     mainloop()
-romb(100, 'red')
 #Yana - triangle
 def triangle (x,color2):
     fillcolor(color2)
