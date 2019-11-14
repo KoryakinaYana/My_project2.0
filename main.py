@@ -1,7 +1,7 @@
 from turtle import *
 from math import sqrt
 t = Turtle()
-t.screen.setup(1200, 1200)
+t.screen.setup(800, 800)
 #Geraschenko Maria - def(romb)
 #Koryakina Yana - def(triangle)
 #Leontyeva Sofia - def(square)
@@ -164,5 +164,32 @@ def swan():
 #Maria - man
 
 #Maria - fish
-
-
+def fish ( a, b, x, color1, fillcolor1, c, color3, fillcolor3, d, color2, fillcolor2, f, color4, fillcolor4 ):
+    goto ( a, b )
+    romb ( x, color1, fillcolor1 )
+    left ( 135 )
+    romb ( x, color1, fillcolor1 )
+    right ( 135 )
+    forward ( x )
+    right ( 45 )
+    square ( c, color3, fillcolor3 )
+    left ( 45 )
+    forward ( sqrt(2) * c)
+    left ( 90 )
+    triangle ( d, color2, fillcolor2 )
+    right ( 90 )
+    forward ( d * sqrt(2) )
+    left ( 135 )
+    triangle ( d, color2, fillcolor2 )
+    right ( 180 )
+    forward ( d*sqrt(2) )
+    right ( 135 )
+    forward ( 0.5 * f * sqrt(2))
+    left ( 135 )
+    triangle(f,color4, fillcolor4 )
+    mainloop()
+#for verification:
+#romb(100,'red','red')
+#fish(0,0,100,'red','red',70, 'orange', 'orange', 200, 'yellow', 'yellow', 150, 'orange','orange' )
+#square(70,'red', 'red')
+#triangle(100,'yellow', 'yellow')
